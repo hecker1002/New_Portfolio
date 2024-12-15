@@ -1,0 +1,258 @@
+
+body{
+
+    background-color: rgb(19, 176, 95) ;
+}
+
+.intro_1 {
+
+    text-shadow: 2px 2px 4px rgba(32, 28, 28, 0.8);
+    color : whitesmoke;
+    text-align: center;
+    /* margin-top: 100px ; */
+    font-size: 30px ;
+    /* height : 40px ; */
+    margin-top: -50px;
+    font-size: 30px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    vertical-align: top;
+    font-style: bold;
+    
+
+    
+}
+
+
+.intro_1 h1 {
+    text-shadow: 2px 2px 4px rgba(32, 28, 28, 0.8);
+    color : whitesmoke;
+}
+
+
+
+/* #intro_2 {
+
+    color : white;
+    text-align: center;
+    margin-top: 50px ;
+    font-size: 20px ;
+}
+
+#intro2 a:hover{
+
+    color:rgb(251, 43, 43) ;
+} */
+.tag {
+    color : rgb(227, 221, 221) ;
+}
+.tag a:hover {
+    color:wheat ;
+    
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+}
+body {
+	background: rgb(17, 167, 59);
+}
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+}
+.icon-area li {
+	display: inline-block;
+	margin: 0 15px;
+}
+.icon-area a {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+	color: #000;
+	font-size: 40px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+	z-index: 0;
+    text-align: center;
+}
+.icon-area a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: 0.3s;
+	z-index: -1;
+}
+.icon-area a:hover:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.icon-area a:hover{
+	color: #fff;
+}
+
+
+body {
+	background:linear-gradient(to bottom, #5d43ce, #52b7ed);
+	height: 100vh;
+}
+.wrapper span {
+	position: fixed;
+	bottom: -180px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+	background-color: #373a3c;
+	box-shadow: 0 0 50px #063f84, 0 0 100px #053d81, 0 0 150px #053a7a, 0 0 200px #074a9b;
+	animation: animate 10s linear infinite;
+}
+.wrapper span:nth-child(1) {
+	left: 60px;
+	animation-delay: 0.6s;
+}
+.wrapper span:nth-child(2) {
+	left: 10%;
+	animation-delay: 3s;
+	width: 60px;
+	height: 60px;
+}
+.wrapper span:nth-child(3) {
+	left: 20%;
+	animation-delay: 2s;
+}
+.wrapper span:nth-child(4) {
+	left: 30%;
+	animation-delay: 5s;
+	width: 80px;
+	height: 80px;
+}
+.wrapper span:nth-child(5) {
+	left: 40%;
+	animation-delay: 1s;
+}
+.wrapper span:nth-child(6) {
+	left: 50%;
+	animation-delay: 7s;
+}
+.wrapper span:nth-child(7) {
+	left: 60%;
+	animation-delay: 6s;
+	width: 100px;
+	height: 100px;
+}
+.wrapper span:nth-child(8) {
+	left: 70%;
+	animation-delay: 8s;
+}
+.wrapper span:nth-child(9) {
+	left: 80%;
+	animation-delay: 6s;
+	width: 90px;
+	height: 90px;
+}
+.wrapper span:nth-child(10) {
+	left: 90%;
+	animation-delay: 4s;
+}
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.content h2 b {
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #cf2020;
+	font-family: montserrat;
+	font-size: 80px;
+	text-transform: uppercase;
+	letter-spacing: 12px;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	80% {
+		opacity: .7;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Apply the animation to the content div */
+.intro_1 {
+    animation: fadeIn 2s ease-in-out; /* Adjust the duration as needed */
+}
+ 
+
+nav {
+    background: linear-gradient(to bottom , rgb(56, 9, 88) , transparent );
+    
+    padding : 10px 10px ; 
+    text-align : right ;
+}
+
+.container {
+    max-width: 1000 px;
+    margin : 0 auto  ;
+}
+
+
+nav a {
+
+    color : rgb(232, 204, 204) ; 
+    font-size: 20px ;
+    margin : 0px 20px ;
+}
+
+nav a:hover{
+
+    font-size: 25px;
+}
+
+#typed-text {
+
+    color :rgb(18, 16, 16) ;
+    font-size: 40px ;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.icon-area{
+    text-shadow: none;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 21%;
+    height: 99%;
+    width: 11px; /* Adjust the thickness of the line as needed */
+    background-color: rgb(75, 9, 142); /* Adjust the color of the line as needed */
+    transform: translateX(-50%);
+    
+}
