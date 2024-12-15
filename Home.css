@@ -240,6 +240,9 @@ nav a:hover{
     font-size: 40px ;
     text-shadow: none;
     font-weight: bold;
+	display: inline-block;
+	transform: translateY(-50px); /* Slight bounce upwards */
+	animation: bounce 0.5s infinite alternate;
 }
 
 .icon-area{
