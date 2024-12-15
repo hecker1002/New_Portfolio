@@ -51,6 +51,8 @@
     </script> 
     
      -->
+ 
+     <div id="visitor-counter">You are visitor number: </div>
 
      <div class="wrapper">
 		<span></span>
@@ -85,6 +87,39 @@
     <div id="typed-text"><b></b></div>
 </div>
 
+
+
+<script>
+    
+    let count = localStorage.getItem("page_visits");
+if (!count) {
+    count = 1; // First visit
+} else {
+    count = parseInt(count) + 1; // Increment visit count
+}
+localStorage.setItem("page_visits", count);
+
+// Get the visitor-counter element
+const visitorCounter = document.getElementById("visitor-counter");
+
+
+visitorCounter.textContent = `You are visitor number: ${count}`;
+
+
+visitorCounter.style.backgroundColor = "black";
+visitorCounter.style.color = "white";
+visitorCounter.style.padding = "10px"; 
+visitorCounter.style.borderRadius = "20px"; 
+visitorCounter.style.display = "inline-block"; 
+
+
+visitorCounter.style.transition = "transform 0.3s ease-in-out";
+visitorCounter.style.transform = "scale(1.2)";
+setTimeout(() => {
+    visitorCounter.style.transform = "scale(1)";
+}, 300);
+
+</script>
 
 
 <script src="Home.js"></script>
